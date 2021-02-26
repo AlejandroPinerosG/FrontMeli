@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light">
+
+    <div class="input-group mb-3 ml-4 mr-4 pl-4 pr-4 pt-2">
+        <a class="navbar-brand">
+            <img src="https://http2.mlstatic.com/storage/developers-site-cms-admin/321781592385-366633181898-logo-developers.png">
+        </a>
+        <input id="serch" type="text" [(ngModel)]="search" class="form-control border-0" placeholder="Buscar productos, marcas y mas..." (keyup.enter)="redirecTo()">
+        <div class="input-group-append">
+            <button class="btn btn-light" (click)="redirecTo()">
+                <i class="fas fa-search search"></i>
+            </button>
+        </div>
+    </div>
+</nav>

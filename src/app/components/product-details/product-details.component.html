@@ -1,0 +1,32 @@
+<div class="col-sm-12 col-md-12 col-lg-12 p-4">
+    <div>
+        <div class="card">
+            <div style="display: inline-block; vertical-align: top">
+                <div class="col-sm-8 col-md-8 col-lg-8 contenedor-imagen">
+                    <img [src]="producto.picture">
+                </div>
+                <div class="col-sm-4 col-md-4col-sm-4 col-lg-4col-sm-4 pt-2" style=" display: inline-block; vertical-align: top ">
+                    <div class="pt-5">
+                        <p class="sub-title">{{producto.condition}} | {{producto.sold_quantity}} vendido </p>
+                    </div>
+                    <div>
+                        <h1 class="title">{{producto.title}} </h1>
+                    </div>
+                    <div>
+                        <h1 class="price"> $ {{ producto.price | number}}</h1>
+                    </div>
+                    <p class="free_shipping" *ngIf="producto.free_shipping">Envío gratis</p>
+
+                    <button class="btn-primary btncomprar ">Comprar ahora</button>
+
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 pt-5 contenedor-imagen">
+                    <h2 class="title-description">Descripción</h2>
+                    <p class="description" [innerText]="producto.description"></p>
+                </div>
+                <div class="col-sm-4 col-md-4col-sm-4 col-lg-4col-sm-4 pt-2" style=" display: inline-block; vertical-align: top ">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
